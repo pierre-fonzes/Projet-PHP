@@ -5,7 +5,7 @@
         <title> Le formulaire </title>
     </head>
     <body>
-        <form method="post" action="routeur.php?action=created">
+        <form method="post" action="controller/routeur.php?action=created">
             <fieldset>
                 <legend><u>Formulaire Create :<u></legend>
                 <p>
