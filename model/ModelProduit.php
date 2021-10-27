@@ -50,9 +50,9 @@ class ModelProduit {
             echo $e->getMessage();
         }
         // Attention, si il n'y a pas de résultats, on renvoie false
-        if (empty($tab_voit))
+        if (empty($tab_prod))
             return false;
-        return $tab_voit[0];
+        return $tab_prod[0];
     }
     public  function save(){
         require_once 'Model.php';
