@@ -31,10 +31,12 @@ class ControllerProduit {
     }
     //à faire pour la prochaine fois
     public static function created(){
-    	$immat = $_GET['immatriculation'];
-    	$marque = $_GET['marque'];
-    	$couleur = $_GET['couleur'];
-    	$voiture = new ModelVoiture($immat,$marque,$couleur);
+    	$numProduit = $_POST['numProduit'];
+    	$nomProduit = $_POST['nomProduit'];
+    	$idCategorie = $_POST['idCategorie'];
+    	$prix = $_POST['prix'];
+    	$description = $_POST['description'];
+    	$voiture = new ModelProduit($immat,$marque,$couleur);
     	$voiture->save();
     	ControllerVoiture::readAll();
         require_once '../view/voiture/created.php';//il faudrait en théorie utiliser la méthode File::build_path() mais j'ai la flemme 
