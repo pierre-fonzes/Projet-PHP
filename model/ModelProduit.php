@@ -26,6 +26,9 @@ class ModelProduit {
             $this->description = $c;
         }
     }
+    public function getDescription(){
+        return $this->description;
+    }
     public function getPrix(){
         return $this->prix;
     }
