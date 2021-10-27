@@ -85,7 +85,7 @@ class ModelProduit {
         $rep =  Model::getPDO()->query("SELECT * FROM p_Produit");
         $rep->setFetchMode(PDO::FETCH_CLASS, 'ModelProduit');
         $tab_prod = $rep->fetchAll();
-        return $tab_voit;    }
+        return $tab_prod;    }
 
     // un constructeur
     public function __construct($nume = NULL, $prix = NULL, $id = NULL , $nom=NULL,$desc=NULL) {

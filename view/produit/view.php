@@ -9,8 +9,6 @@
             <nav>
                 <ul>
                     <li><a href="https://webinfo.iutmontp.univ-montp2.fr/~ferrierl/PROJET-PHP/controller/index.php?action=readAll">Liste des Produits</a></li>
-                    <li><a href="https://webinfo.iutmontp.univ-montp2.fr/~ferrierl/PROJET-PHP/controller/index.php?action=readAll&controller=produit">Trajets</a></li>
-                    <li><a href="https://webinfo.iutmontp.univ-montp2.fr/~ferrierl/PROJET-PHP/controller/index.php?action=readAll&controller=utilisateur">Utilisateur</a></li>
                 </ul>
             </nav>
 
