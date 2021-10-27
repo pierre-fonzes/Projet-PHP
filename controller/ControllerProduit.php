@@ -36,11 +36,11 @@ class ControllerProduit {
     	$idCategorie = $_POST['idCategorie'];
     	$prix = $_POST['prix'];
     	$description = $_POST['description'];
-    	$voiture = new ModelProduit($immat,$marque,$couleur);
-    	$voiture->save();
-    	ControllerVoiture::readAll();
-        require_once '../view/voiture/created.php';//il faudrait en théorie utiliser la méthode File::build_path() mais j'ai la flemme 
-        require_once '../view/voiture/list.php';
+    	$produit = new ModelProduit($numProduit,$nomProduit,$idCategorie,$prix,$description);
+    	$produit->save();
+    	ControllerProduit::readAll();
+        require_once '../view/produit/created.php';//il faudrait en théorie utiliser la méthode File::build_path() mais j'ai la flemme 
+        require_once '../view/produit/list.php';
     }
 }
 ?>
