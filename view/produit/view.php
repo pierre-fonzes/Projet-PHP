@@ -22,7 +22,7 @@
         ?>
         <footer>
             <p style="border: 1px solid black;text-align:right;padding-right:1em;">
-                Site de covoiturage de Adolf et son équipe</p>
+                Boutique de bons vivants !</p>
         </footer>
 
 

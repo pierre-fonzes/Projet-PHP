@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Liste des voitures</title>
+        <title>Le Terroir</title>
     </head>
     <body>
         <h1>Le terroir<h1>

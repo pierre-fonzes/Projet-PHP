@@ -68,8 +68,8 @@ class ModelProduit {
                 "nomProduit" => $this->nomProduit,
                 "idCategorie" => $this->idCategorie,
                 "numProduit" => $this->numProduit,
-                "prix" => $this->prix;
-                "description" => $this->description;
+                "prix" => $this->prix,
+                "description" => $this->description
             //nomdutag => valeur, ...
             );
 

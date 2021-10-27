@@ -1,5 +1,5 @@
 <?php
-require_once ('../model/ModelVoiture.php'); // chargement du modèle
+require_once ('../model/ModelProduit.php'); // chargement du modèle
 class ControllerProduit {
     public static function readAll() {
         $tab_v = ModelProduit::getAllProduits();     //appel au modèle pour gerer la BD
