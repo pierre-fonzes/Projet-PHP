@@ -6,7 +6,8 @@ class ControllerProduit {
         $controller='produit';
         $view='list';
         $pagetitle='Liste des produits';
-        require ('../view/produit/view.php');  //"redirige" vers la vue
+        $filepath = File::build_path(array("view",$controller, "view.php"));
+        require ($filepath);  //"redirige" vers la vue
 
     }
     public static function read(){
@@ -20,14 +21,16 @@ class ControllerProduit {
     	}else{
             $view = 'detail';
             $pagetitle = 'Détail du Produit';    
-        	require ('../view/produit/view.php');  //"redirige" vers la vue
+            $filepath = File::build_path(array("view",$controller, "view.php"));
+            require ($filepath);  //"redirige" vers la vue
     	}
     } 
     public static function create(){
         $view = 'create';
         $pagetitle  = 'Creation dun produit';
         $controller = 'produit';
-    	require('../view/produit/create.php'); //redirige vers la vue de création
+        $filepath = File::build_path(array("view",$controller, "view.php"));
+        require ($filepath);  //"redirige" vers la vue
     }
     //à faire pour la prochaine fois
     public static function created(){
