@@ -25,7 +25,7 @@ class ControllerProduit {
     } 
     public static function create(){
         $view = 'create';
-        $pagetitle  = 'Creation d''un produit';
+        $pagetitle  = 'Creation dun produit';
         $controller = 'produit';
     	require('../view/produit/create.php'); //redirige vers la vue de création
     }
