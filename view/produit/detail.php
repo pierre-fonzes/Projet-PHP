@@ -17,7 +17,7 @@
             echo '<img src="img/globe.gif" />';
             echo '<div class="prixProduit">ProposÃ© au prix de : ' . $res1 . '.</div>';
             echo  '<div class="descProduit">Description : '  . $res2 . '.</div>';
-            echo '<a href="../../panier?id='.$id.'">+</a>';
+            echo '<a href="../../panier.php?id='.$id.'">+</a>';
         ?>
 
 
