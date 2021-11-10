@@ -1,6 +1,13 @@
 <?php
 session_start();
 
+require_once('/model/ModelProduit.php');
+$id = $_GET['id'];
+$tabP = ModelProduit::getProduitBynum($id);
+
+ajouterArticle($tabP->getnomProduit(),$tabP->getPrix());
+echo 'votre produit est dans le panier';
+
 function creerPanier(){
     
     if(!isset($_SESSION['Panier'])){

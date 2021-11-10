@@ -5,34 +5,19 @@
         <title>Descritpion du produit</title>
     </head>
     <body>    
-        <nav>
-            <h1>Le Terroir</h1>
-            <div class="onglets">
-                
-                    <a href="">Accueil</a>
-                    <a href="#bandeau">Présentation</a>
-                    <a href="#"></a></li>
-                    <a href="/controller/index.php?action=readAll">Nos Produits</a>
-                
-            </div>
-        </nav> 
+     
 
         <?php
             $res = htmlspecialchars($v->getnomProduit());
             $res1 = htmlspecialchars($v->getPrix());
             $res2 = htmlspecialchars($v->getDescription());
+            $id = htmlspecialchars($v->getnumProduit());
 
             echo  '<div class="name"> Produit : ' . $res . '.</div>';
-            echo '<img src="img/globe.gif" />'
+            echo '<img src="img/globe.gif" />';
             echo '<div class="prixProduit">ProposÃ© au prix de : ' . $res1 . '.</div>';
             echo  '<div class="descProduit">Description : '  . $res2 . '.</div>';
-            echo '<form action="/panier.php" method="post">
-                  <input name="ajouterpanier" type="button" value="Ajouter au panier">
-                  </form>';
-            require_once('panier.php');
-            if($_POST['ajouterpanier']){
-                ajouterArticle($res, $res1);
-            }
+            echo '<a href="../../panier?id='.$id.'">+</a>';
         ?>
 
 

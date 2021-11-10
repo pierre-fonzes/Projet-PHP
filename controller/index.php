@@ -5,8 +5,17 @@
         <title>Le Terroir</title>
     </head>
     <body>
-        <h1>Le terroir<h1>
-        <h3>Site de vente de produit<h3>
+        <nav>
+            <h1>Le Terroir</h1>
+            <div class="onglets">
+                
+                    <a href="">Accueil</a>
+                    <a href="#bandeau">Présentation</a>
+                    <a href="#"></a></li>
+                    <a href="/controller/index.php?action=readAll">Nos Produits</a>
+                
+            </div>
+        </nav> 
         <?php
             $DS = DIRECTORY_SEPARATOR;
             $ROOT_FOLDER = __DIR__ . $DS . "..";
