@@ -8,6 +8,7 @@ class ModelProduit {
     private $idCategorie;
     private $prix;
     private $description;
+    private $img;
 
     // un getter      
     public function getnumProduit() {
