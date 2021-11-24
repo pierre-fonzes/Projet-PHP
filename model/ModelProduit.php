@@ -8,12 +8,17 @@ class ModelProduit {
     private $idCategorie;
     private $prix;
     private $description;
-    private $img;
+    private $lien;
 
     // un getter      
     public function getnumProduit() {
         return $this->numProduit;
     }
+
+    public function getLien() {
+        return $this->lien;
+    }
+
 
     // un setter 
     public function setPrix($m) {

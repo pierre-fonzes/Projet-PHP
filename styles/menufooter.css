@@ -95,7 +95,7 @@ header button{
     src : url(Polices/Saudagar.ttf);
 }
 
-/
+/* 
 .main{
     margin-top:40px;
     height:100vh;
@@ -125,7 +125,7 @@ header button{
     height: 400px;
     width: 700px;
     margin-top: 5px;
-}  
+}  */
 footer{
     margin-top: 40px;
     border-top: solid 5px #6f6f6f;

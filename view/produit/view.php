@@ -3,25 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <title><?php echo $pagetitle; ?></title>
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/menufooter.css">
+
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="https://webinfo.iutmontp.univ-montp2.fr/~ferrierl/PROJET-PHP/controller/index.php?action=readAll">Liste des Produits</a></li>
-                </ul>
-            </nav>
+      
 
         <?php
+            require_once '../components/menu.php';
+
             // Si $controleur='voiture' et $view='list',
             // alors $filepath="/chemin_du_site/view/voiture/list.php"
             $filepath = File::build_path(array("view", $controller, "$view.php"));
             require $filepath;
+            require_once '../components/footer.php';
         ?>
-        <footer>
-            <p style="border: 1px solid black;text-align:right;padding-right:1em;">
-                Boutique de bons vivants !</p>
-        </footer>
+   
 
 
     </body>
