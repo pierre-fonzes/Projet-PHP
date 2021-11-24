@@ -18,4 +18,4 @@
                 </div>
             </div>
             <p id="contact">Contact : 06 50 53 85 66 | &copy; 2021, Le Terroir.</p>
-</footer>
+        </footer>
